@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <script>    function removeDuplicates(str) {
+            let result = ''
+            let duplicate = '';
+            for (let i = 0; i <= str.length - 1; i++) {
+                for (let j = 0; j <= str.length - 1; j++) {
+                    if (i != j) {
+                        if (str[i] === str[j]) {
+                            duplicate += str[j]
+                        }
+                    }
+                }
+            }
+            for (let k = 0; k <= str.length - 1; k++) {
+                let char = str[k]
+                if (duplicate.indexOf(char) === -1) {
+                    result += char
+                }
+            }
+            return result
+        }
+        const input = 'calculator';
+        console.log(removeDuplicates(input));
+    </script>
+</body>
+
+</html>

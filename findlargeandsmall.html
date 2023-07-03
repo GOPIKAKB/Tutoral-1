@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <script>
+        const largeorsamll = (arr) => {
+            let large = arr[0]
+            let small = arr[0]
+            for (let i = 0; i <= arr.length-1; i++) {
+                if (arr[i] < small) {
+                    small = arr[i]
+                }
+                if (arr[i] > large) {
+                    large = arr[i]
+                }
+            }
+            return { large, small }
+        }
+        console.log(largeorsamll([1, 2, 4, 32, 12, 6, 8]));
+    </script>
+
+</body>
+
+</html>

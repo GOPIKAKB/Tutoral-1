@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        const isAmstrong=(n)=>{
+let sum=0
+let num=n.toString()
+let numofdigit=num.length    
+for(let i=0;i<= num.length-1;i++){
+    let digit = parseInt(num[i])
+    sum += Math.pow(digit,numofdigit)
+}
+
+return sum===n
+
+        }
+      console.log('is amstrong:',  isAmstrong(34))
+      console.log('is amstrong:',  isAmstrong(371))
+
+    </script>
+</body>
+</html>

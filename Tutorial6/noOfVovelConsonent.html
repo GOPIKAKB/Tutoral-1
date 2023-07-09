@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <script>
+        const findCount = () => {
+            let vovel = 'aeiou'
+            let vovelCount = 0
+            let consonentCount = 0
+            for (let i = 0; i <= str.length - 1; i++) {
+                if (str[i] != '') {
+                    if (vovel.indexOf(str[i]) >= 0) {
+                        vovelCount++
+                    }
+                    else {
+                        consonentCount++
+                    }
+                }
+            }
+            return{vovelCount,consonentCount}
+        }
+        let str = 'radhsiob'
+      console.log(  findCount(str));
+    </script>
+</body>
+
+</html>
